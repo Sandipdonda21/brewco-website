@@ -41,7 +41,8 @@ export default function Contact() {
             </div>
           </div>
           <div className="lg:w-1/2">
-            <form className="bg-white p-8 rounded-xl shadow-md" name="contact" netlify >
+            <form className="bg-white p-8 rounded-xl shadow-md" name="contact" data-netlify="true" >
+              <input type="hidden" name="form-name" value="contact"/>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">Full Name*</label>
