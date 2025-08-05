@@ -41,30 +41,30 @@ export default function Contact() {
             </div>
           </div>
           <div className="lg:w-1/2">
-            <form className="bg-white p-8 rounded-xl shadow-md">
+            <form className="bg-white p-8 rounded-xl shadow-md" name="contact" method="POST" data-netlify="true" >
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">Full Name*</label>
-                  <input type="text" id="name" className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-amber-500 focus:border-amber-500" />
+                  <input type="text" id="name" name="name" className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-amber-500 focus:border-amber-500" />
                 </div>
                 <div>
                   <label htmlFor="company" className="block text-sm font-medium text-gray-700 mb-1">Company*</label>
-                  <input type="text" id="company" className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-amber-500 focus:border-amber-500" />
+                  <input type="text" id="company" name="company" className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-amber-500 focus:border-amber-500" />
                 </div>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                 <div>
                   <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">Email*</label>
-                  <input type="email" id="email" className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-amber-500 focus:border-amber-500" />
+                  <input type="email" id="email" name="email" className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-amber-500 focus:border-amber-500" />
                 </div>
                 <div>
                   <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-1">Phone*</label>
-                  <input type="tel" id="phone" className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-amber-500 focus:border-amber-500" />
+                  <input type="tel" id="phone" name="phone" className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-amber-500 focus:border-amber-500" />
                 </div>
               </div>
               <div className="mb-6">
                 <label htmlFor="event-type" className="block text-sm font-medium text-gray-700 mb-1">Event Type*</label>
-                <select id="event-type" className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-amber-500 focus:border-amber-500">
+                <select id="event-type" name="eventName" className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-amber-500 focus:border-amber-500">
                   <option value="">Select an option</option>
                   <option value="conference">Conference</option>
                   <option value="office-service">Office Coffee/Tea Service</option>
@@ -76,7 +76,7 @@ export default function Contact() {
               </div>
               <div className="mb-6">
                 <label htmlFor="details" className="block text-sm font-medium text-gray-700 mb-1">Event Details*</label>
-                <textarea id="details" rows="4" className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-amber-500 focus:border-amber-500"></textarea>
+                <textarea id="details" name="eventDetails" rows="4" className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-amber-500 focus:border-amber-500"></textarea>
               </div>
               <button
                 type="submit"
