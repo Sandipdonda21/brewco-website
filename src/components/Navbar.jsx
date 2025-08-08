@@ -11,7 +11,7 @@ export default function Navbar() {
           <div className="flex items-center">
             <div className="flex-shrink-0 flex items-center">
               <i className="fas fa-mug-hot text-amber-800 text-3xl mr-2"></i>
-              <span className="heading-font text-2xl font-bold text-amber-900">Brew & Co. Sandip</span>
+              <span className="heading-font text-2xl font-bold text-amber-900">Brew & Co. Sandip Donda</span>
             </div>
           </div>
 
